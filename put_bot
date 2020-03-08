@@ -1,0 +1,19 @@
+import tweepy as tp
+import time
+import os
+
+consumer_key = 'Twitter Dev Account Required'
+consumer_secret = 'Twitter Dev Account Required'
+access_token = 'Twitter Dev Account Required'
+access_secret = 'Twitter Dev Account Required'
+
+auth = tp.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_secret)
+api = tp.API(auth)
+
+os.chdir("tech")
+for tech_image in os.listdir("."):
+    api.update_with_media(tech_image)
+    time.sleep(4)
+
+print(os.getcwd())
