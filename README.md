@@ -1,4 +1,4 @@
-# tweepy_bot
+# `Tweepy_Bot`
 This repository is based on a automation method via python by which your script can automatically post pictures by extracting it from a particular source and posting it to your twitter account.
 
 But before proceeding ,Important things to keep in mind :-
